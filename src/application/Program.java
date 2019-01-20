@@ -1,25 +1,18 @@
 package application;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program {
 
 	public static void main(String[] args) {
 		
 		Department obj = new Department(1, "Books");
-		List<Department> ob = new ArrayList<>();
-	
+		Seller seller = new Seller(21, "Bob", "bob@gmail.com", new Date(), 3000.00, obj);
 		
-		ob.add(obj);
-		ob.add(new Department(12, "Gol"));
-		ob.add(new Department(33, "RH"));
-		
-		
-		
-		System.out.println(ob);
+		System.out.println(seller);
 
 	}
 
